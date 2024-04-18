@@ -1,21 +1,39 @@
 .header {
-  padding: 20px 0;
+   padding: 20px;
 }
 
-.nav-list {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  gap: 40px;
+.header__container {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
 }
 
-.nav-link {
-  font-weight: 500;
-  letter-spacing: 0.02em;
-  line-height: 1.5;
+.header__logo {}
+
+.header__button {}
+
+
+.logo {
+   color: #0c0c0c;
+   text-transform: lowercase;
 }
 
-.nav-link:hover,
-.nav-link:focus {
-  color: #747bff;
+.burger-btn {}
+
+.burger-btn__icon {
+   stroke: #0c0c0c;
 }
+
+/* Tablet ===========================================*/
+@media only screen and (min-width: 768px) {
+   .burger-btn__icon {
+      width: 40px;
+      height: 40px;
+   }
+
+   .logo {
+      font-size: 20px;
+   }
+}
+
+/* =========================================== /Tablet*/
