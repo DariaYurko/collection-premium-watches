@@ -1,14 +1,27 @@
+/* BODY ===============================================*/
 body {
    font-family: "Gilroy", sans-serif;
    font-weight: 500;
-   font-size: 16px;
-   line-height: 1.25;
+   font-size: 14px;
    letter-spacing: -0.02em;
    color: rgba(12, 12, 12, 0.7);
    background: #fbfbfb;
 }
 
-/* ============================================ */
+@media only screen and (min-width: 768px) {
+   body {
+      font-size: 16px;
+   }
+}
+
+*:focus {
+   outline: transparent;
+}
+
+/* =============================================== /BODY*/
+
+
+/* Container ============================================ */
 [class*="__container"] {
    max-width: 375px;
    padding-left: 20px;
@@ -33,4 +46,92 @@ body {
    }
 }
 
-/* ============================================ */
+/* ============================================ /Container*/
+
+
+/* Sections-padding ====================================== */
+.about-us,
+.catalog,
+.sale,
+.reviews,
+.contact-us {
+   padding-top: 30px;
+   padding-bottom: 30px;
+}
+
+@media only screen and (min-width: 768px) {
+
+   .about-us,
+   .catalog,
+   .sale,
+   .reviews,
+   .contact-us {
+      padding-top: 40px;
+      padding-bottom: 40px;
+   }
+}
+
+@media only screen and (min-width: 1280px) {
+
+   .about-us,
+   .catalog,
+   .sale,
+   .reviews,
+   .contact-us {
+      padding-top: 50px;
+      padding-bottom: 50px;
+   }
+}
+
+/* ====================================== /Sections-padding*/
+
+
+
+/* Sections-title ======================================== */
+
+/* ======================================== /Sections-title*/
+
+
+
+/* Social ================================================ */
+.social {
+   display: flex;
+   gap: 10px;
+}
+
+.social__item {
+   flex-shrink: 0;
+}
+
+.social__link {
+   border: 1px solid rgba(251, 251, 251, 0.1);
+   border-radius: 10px;
+   width: 34px;
+   height: 34px;
+   fill: rgba(251, 251, 251, 0.8);
+
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   transition: fill 250ms linear, border-color 250ms linear;
+}
+
+.social__link:hover,
+.social__link:focus {
+   border-color: rgba(251, 251, 251, 0.8);
+   fill: rgba(251, 251, 251, 1);
+}
+
+@media only screen and (min-width: 768px) {
+   .social__link {
+      width: 36px;
+      height: 36px;
+   }
+
+   .social__icon {
+      width: 20px;
+      height: 20px;
+   }
+}
+
+/* =============================================== /Social*/
