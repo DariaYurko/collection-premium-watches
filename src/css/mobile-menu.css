@@ -3,8 +3,8 @@
    flex-direction: column;
    justify-content: space-between;
    align-items: center;
-      row-gap: 24px;
-   
+   row-gap: 24px;
+
    position: fixed;
    top: 0;
    right: 0;
@@ -36,8 +36,8 @@
 
 .btn-close-menu:hover,
 .btn-close-menu:focus {
-  outline: 1px solid rgba(251, 251, 251, 0.8);
-} 
+   outline: 1px solid rgba(251, 251, 251, 0.8);
+}
 
 .btn-close-menu__icon {
    stroke: #fbfbfb;
@@ -106,6 +106,20 @@
 @media only screen and (min-width: 768px) {
    .mobile-menu {
       width: 330px;
+      padding: 26px 32px 50px 32px;
+   }
+
+   .btn-close-menu {
+      width: 40px;
+      height: 40px;
+   }
+
+   .mobile-menu__list {
+      row-gap: 32px;
+   }
+   .social__link {
+      width: 40px;
+      height: 40px;
    }
 }
 
@@ -113,5 +127,4 @@
    .mobile-menu {
       display: none;
    }
-
 }
