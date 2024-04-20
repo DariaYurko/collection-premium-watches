@@ -1,12 +1,18 @@
 .mobile-menu {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   align-items: center;
+      row-gap: 24px;
+   
    position: fixed;
    top: 0;
    right: 0;
    width: 200px;
-   height: 100vh;
+   height: 100%;
    padding: 20px 20px 40px 20px;
-
    background: #0c0c0c;
+   overflow-y: auto;
 
    opacity: 0;
    visibility: hidden;
@@ -18,40 +24,94 @@
    visibility: visible;
 }
 
-.mobile-menu__container {
-   height: 100%;
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   justify-content: space-between;
+.mobile-menu__btn {
+   align-self: flex-end;
 }
 
-.menu-close-btn {
+.btn-close-menu {
    width: 34px;
    height: 34px;
+   border-radius: 10px;
 }
-.menu-close-btn__icon {
+
+.btn-close-menu:hover,
+.btn-close-menu:focus {
+  outline: 1px solid rgba(251, 251, 251, 0.8);
+} 
+
+.btn-close-menu__icon {
    stroke: #fbfbfb;
 }
 
 
-.mobile-menu__navigation {}
-.mobile-menu__list {}
-.mobile-menu__item {}
+.mobile-menu__navigation {
+   flex-shrink: 1;
+}
+
+.mobile-menu__list {
+   display: flex;
+   flex-direction: column;
+   row-gap: 24px;
+}
+
+.mobile-menu__item {
+   text-align: center;
+}
+
+/* .mobile-menu__item:not(:last-child) {
+   margin-bottom: 24px;
+} */
+
 .mobile-menu__link {
    font-size: 14px;
    line-height: 1.29;
    color: #fbfbfb;
+   text-transform: capitalize;
+
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   row-gap: 2px;
 }
 
-.mobile-menu__social {
-   
+.mobile-menu__link.current::after {
+   transform: scale(1);
 }
 
-@media only screen and (min-width: 768px) {}
+.mobile-menu__link::after {
+   content: "";
+   display: block;
+   width: 8px;
+   height: 8px;
+   border-radius: 50%;
+   background-color: #3350e9;
+   transform: scale(0);
+   transition: transform 100ms linear;
+}
+
+.mobile-menu__link:hover::after {
+   transform: scale(1);
+}
+
+.mobile-menu__link:focus::after {
+   transform: scale(1);
+}
+
+/* .mobile-menu__social {
+   margin-top: auto;
+} */
+
+
+
+@media only screen and (min-width: 768px) {
+   .mobile-menu {
+      width: 330px;
+   }
+}
 
 @media only screen and (min-width: 1280px) {
    .mobile-menu {
       display: none;
    }
+
 }
