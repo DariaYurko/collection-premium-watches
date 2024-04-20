@@ -7,13 +7,8 @@
    display: flex;
    align-items: center;
    justify-content: space-between;
+   column-gap: 50px;
 }
-
-.header__menu {}
-
-.header__social {}
-
-.header__button {}
 
 .header__menu,
 .header__social {
@@ -30,8 +25,6 @@
 .logo:focus {
    transform: scale(1.3);
 }
-
-.menu-btn-btn {}
 
 .menu-btn__icon {
    stroke: #0c0c0c;
@@ -77,15 +70,13 @@
       display: flex;
    }
 
-
-   .menu {}
-
    .menu__list {
       display: flex;
-      gap: 40px;
+      justify-content: center;
+      flex-wrap: wrap;
+      column-gap: 40px;
+      row-gap: 20px;
    }
-
-   .menu__item {}
 
    .menu__link {
       font-size: 14px;

@@ -7,6 +7,7 @@
   border: 0;
   box-sizing: border-box;
 }
+
 /* *:focus {
   outline: transparent;
 } */
@@ -37,6 +38,7 @@ button {
   cursor: pointer;
   border: none;
   line-height: 0;
+  padding: 0;
 }
 
 input,
