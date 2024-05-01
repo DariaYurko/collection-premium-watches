@@ -51,7 +51,7 @@ body {
 
 
 /* Sections-padding ====================================== */
-.hero
+.hero,
 .about-us,
 .catalog,
 .sale,
@@ -62,7 +62,7 @@ body {
 }
 
 @media only screen and (min-width: 768px) {
-
+   .hero,
    .about-us,
    .catalog,
    .sale,
@@ -74,7 +74,7 @@ body {
 }
 
 @media only screen and (min-width: 1280px) {
-
+   .hero
    .about-us,
    .catalog,
    .sale,
@@ -90,8 +90,45 @@ body {
 
 
 /* Sections-title ======================================== */
+.title-section {
+   font-size: 32px;
+   line-height: 1;
+   color: #0c0c0c;
+   text-transform: capitalize;
+}
 
+@media only screen and (min-width: 768px) {
+   .title-section {
+      font-size: 48px;
+      line-height: 0.91667;
+   }
+}
 /* ======================================== /Sections-title*/
+
+
+
+/* Sections-link ======================================== */
+.link-section {
+   text-align: center;
+   color: #fbfbfb;
+   background-color: #3350e9;
+   border-radius: 16px;
+
+   display: inline-flex;
+   justify-content: center;
+   align-items: center;
+
+   min-width: 160px;
+   padding: 15px;
+
+   transition: background-color 150ms ease-in;
+}
+
+.link-section:hover,
+.link-section:focus {
+   background-color: #1f3cd4;
+}
+/* ======================================== /Sections-link*/
 
 
 

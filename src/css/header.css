@@ -82,6 +82,7 @@
       font-size: 14px;
       line-height: 1.29;
       color: #0c0c0c;
+      text-transform: capitalize;
 
       display: flex;
       flex-direction: column;
