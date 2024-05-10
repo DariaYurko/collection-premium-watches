@@ -62,6 +62,7 @@ body {
 }
 
 @media only screen and (min-width: 768px) {
+
    .hero,
    .about-us,
    .catalog,
@@ -74,8 +75,8 @@ body {
 }
 
 @media only screen and (min-width: 1280px) {
-   .hero
-   .about-us,
+
+   .hero .about-us,
    .catalog,
    .sale,
    .reviews,
@@ -97,12 +98,22 @@ body {
    text-transform: capitalize;
 }
 
+.title-section_margin {
+   margin-bottom: 24px;
+}
+
+
 @media only screen and (min-width: 768px) {
    .title-section {
       font-size: 48px;
       line-height: 0.91667;
    }
+
+   .title-section_margin {
+      margin-bottom: 40px;
+   }
 }
+
 /* ======================================== /Sections-title*/
 
 
@@ -128,6 +139,7 @@ body {
 .link-section:focus {
    background-color: #1f3cd4;
 }
+
 /* ======================================== /Sections-link*/
 
 

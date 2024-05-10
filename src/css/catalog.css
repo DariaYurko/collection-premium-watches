@@ -1,0 +1,221 @@
+.catalog {}
+
+.container__catalog {}
+
+/* ====================================== */
+
+.catalog__title {}
+
+.catalog__cards:not(:last-child) {
+   margin-bottom: 60px;
+}
+
+.catalog__slogan>*:not(:last-child) {
+   margin-bottom: 28px;
+}
+
+/* ======================================== */
+
+.catalog__card {}
+
+.card {
+   border: 1px solid rgba(12, 12, 12, 0.05);
+   border-radius: 30px;
+   background: #f3f3f3;
+}
+
+.card__link {
+   display: block;
+   padding: 42px 28px 24px 28px;
+}
+
+.card__link>* {
+   margin-bottom: 28px;
+}
+
+.card__image {
+   width: 208px;
+   height: 226px;
+   overflow: hidden;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+.card__img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+
+.card__title {
+   font-size: 16px;
+   line-height: 1.25;
+   color: #0c0c0c;
+   margin-bottom: 8px;
+
+   /* Cut the text and add "..." */
+   overflow: hidden;
+   white-space: nowrap;
+   text-overflow: ellipsis;
+}
+
+.card__price {
+   font-size: 14px;
+   font-weight: 400;
+   line-height: 1.28571;
+   color: rgba(12, 12, 12, 0.5);
+}
+
+.card__link>*:last-child {
+   margin-bottom: 0;
+}
+
+/* ============================================= */
+
+.slogan-catalog {
+   padding: 60px 28px;
+   border-radius: 30px;
+   background-image: linear-gradient(to bottom,
+         rgba(12, 12, 12, 0.8),
+         rgba(12, 12, 12, 0.8)),
+      url(../img/catalog/bg/bg-mobile.jpg);
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+}
+
+.slogan-catalog__text {
+   font-size: 32px;
+   line-height: 1;
+   color: #fbfbfb;
+}
+
+.slogan-catalog__text-dark {
+   color: rgba(251, 251, 251, 0.5);
+}
+
+.slogan-catalog__link {
+   display: inline-block;
+   color: #fbfbfb;
+   text-transform: capitalize;
+   text-align: center;
+
+   min-width: 160px;
+   padding: 15px;
+   border-radius: 16px;
+   border: 1px solid rgba(251, 251, 251, 0.15);
+
+   transition: color 150ms linear, background 150ms linear;
+}
+
+.slogan-catalog__link:hover,
+.slogan-catalog__link:focus {
+   color: #0c0c0c;
+   background: #fbfbfb;
+}
+
+/*================================================*/
+
+
+
+
+/* MOBILE ONLY =====================================*/
+@media only screen and (max-width:767px) {
+
+   .catalog__card:not(:last-child) {
+      margin-bottom: 20px;
+   }
+}
+
+/* ===================================== /MOBILE ONLY*/
+
+
+
+
+
+/* TABLET =========================================*/
+@media only screen and (min-width:768px) {
+
+   .catalog__cards {
+      display: flex;
+      flex-wrap: wrap;
+      column-gap: 12px;
+      row-gap: 32px;
+   }
+
+   .catalog__cards:not(:last-child) {
+      margin-bottom: 80px;
+   }
+
+   .catalog__card {
+      width: calc((100% - 16px) / 2)
+   }
+
+   .card__link {
+      padding: 34px 32px 24px 32px;
+   }
+
+
+   .card__image {
+      width: 268px;
+      height: 292px;
+      margin-bottom: 20px;
+   }
+
+   .card__title {
+      font-size: 20px;
+      line-height: 1;
+   }
+
+   .catalog__slogan>*:not(:last-child) {
+      margin-bottom: 32px;
+   }
+
+   .slogan-catalog {
+      padding: 80px 64px;
+      background-image: linear-gradient(to bottom,
+            rgba(12, 12, 12, 0.8),
+            rgba(12, 12, 12, 0.8)),
+         url(../img/catalog/bg/bg-tablet.jpg);
+   }
+
+   .slogan-catalog__text {
+      font-size: 48px;
+      line-height: 0.95;
+   }
+
+}
+
+/*===================================== /TABLET*/
+
+
+
+/* DESKTOP =======================================*/
+@media only screen and (min-width: 1280px) {
+   .catalog__cards:not(:last-child) {
+      margin-bottom: 100px;
+   }
+
+   .catalog__cards {
+      column-gap: 23px;
+   }
+
+   .catalog__card {
+      width: calc((100% - 46px) / 3)
+   }
+
+
+   .card__image {
+      width: 292px;
+      height: 292px;
+   }
+
+   .slogan-catalog {
+      background-image: linear-gradient(to bottom,
+            rgba(12, 12, 12, 0.8),
+            rgba(12, 12, 12, 0.8)),
+         url(../img/catalog/bg/bg-desktop.jpg);
+   }
+}
+
+/*======================================== /DESKTOP*/
