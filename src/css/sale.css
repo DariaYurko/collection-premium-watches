@@ -1,0 +1,251 @@
+.sale {}
+
+.sale__container {}
+
+.sale__title {}
+
+.sale__content {}
+
+
+
+
+.model-desc>*:not(:last-child) {
+   margin-bottom: 20px;
+}
+
+.model-desc__list {}
+
+
+.model-desc__pic {}
+
+.model-desc__img {}
+
+
+
+.set-model-photos {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 5px;
+}
+
+.set-model-photos__item {
+   width: calc((100% - 15px) / 4);
+
+   background: #f3f3f3;
+   border: 1px solid rgba(12, 12, 12, 0.05);
+   border-radius: 16px;
+   width: 80px;
+   height: 80px;
+   padding: 13px 14px;
+
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.set-model-photos__pic {
+   width: 52px;
+   height: 54px;
+   overflow: hidden;
+
+}
+
+.set-model-photos__img {
+   display: block;
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+
+
+
+.model-desc__image {
+   background: #f3f3f3;
+   border: 1px solid rgba(12, 12, 12, 0.05);
+   border-radius: 30px;
+   padding: 50px;
+
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.model-desc__pic {
+   width: 235px;
+   height: 285px;
+   overflow: hidden;
+}
+
+
+.model-desc__img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+
+
+.model-desc__description>* {
+   margin-bottom: 28px;
+}
+
+.description-model {
+   background: #3350e9;
+   border-radius: 30px;
+   padding: 48px 28px;
+   color: #fbfbfb;
+}
+
+.description-model__title-block {
+   margin-bottom: 20px;
+}
+
+.description-model__title-block>*:not(:last-child) {
+   margin-bottom: 10px;
+}
+
+.description-model__title {
+   font-size: 24px;
+   line-height: 1.17;
+   color: #fbfbfb;
+}
+
+.description-model__index {
+   font-weight: 400;
+   font-size: 14px;
+   color: rgba(251, 251, 251, 0.5);
+}
+
+.description-model__price {}
+
+.price-model-desc {
+   display: flex;
+   flex-wrap: wrap;
+   column-gap: 9px;
+   align-items: center;
+}
+
+.price-model-desc__actual {
+   display: inline-block;
+   font-size: 16px;
+   line-height: 1.25;
+   background: rgba(251, 251, 251, 0.1);
+   padding: 8px 12px;
+   border-radius: 8px;
+
+}
+
+.price-model-desc__real {}
+
+.description-model__text {
+   font-size: 14px;
+   color: rgba(251, 251, 251, 0.7);
+}
+
+
+.description-model__list-category {}
+
+.category-list {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 8px;
+}
+
+.category-list__item {
+   font-size: 12px;
+   line-height: 1.33;
+   color: #fbfbfb;
+   padding: 8px 12px;
+   border: 1px solid rgba(251, 251, 251, 0.2);
+   border-radius: 8px;
+}
+
+.model-desc__description>*:last-child {
+   margin-bottom: 0;
+}
+
+/* Tablet ==========================================*/
+@media only screen and (min-width: 768px) {
+   .model-desc {
+      display: flex;
+      flex-wrap: wrap;
+      column-gap: 20px;
+      row-gap: 40px;
+   }
+
+   .model-desc__list {
+      flex-shrink: 0;
+   }
+
+   .set-model-photos {
+      flex-direction: column;
+      row-gap: 10px;
+   }
+
+   .set-model-photos__item {
+      width: 132px;
+      height: 132px;
+
+   }
+
+   .model-desc__image {
+      flex-grow: 1;
+   }
+
+   .model-desc__description {}
+
+
+   .model-desc>*:not(:last-child) {
+      margin-bottom: 40px;
+   }
+
+
+   .set-model-photos__item {
+      padding: 16px 18px;
+      /* width: 100%; */
+   }
+
+   .set-model-photos__pic {
+      width: 96px;
+      height: 100px;
+   }
+
+
+   .model-desc__pic {
+      width: 328px;
+      height: 398px;
+   }
+
+   .description-model__title-block {
+      width: 440px;
+   }
+
+   .description-model__title {
+      font-size: 32px;
+      line-height: 1.13;
+   }
+
+   .description-model__price {
+      margin-bottom: 30px;
+   }
+
+   .description-model__text {
+      margin-bottom: 40px;
+   }
+}
+
+/* /Tablet =========================================*/
+
+
+
+/* Desktop ==========================================*/
+@media only screen and (min-width: 1280px) {
+   .model-desc>*:not(:last-child) {
+      margin-bottom: 0;
+   }
+
+   .description-model__title-block {
+      width: 100%;
+   }
+}
+
+/* /Desktop =========================================*/
