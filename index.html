@@ -8,10 +8,11 @@
   <link rel="icon" type="image/svg+xml" href="/collection-premium-watches/assets/favicon-4bc1398f.svg" />
   
   <script type="module" crossorigin src="/collection-premium-watches/commonHelpers.js"></script>
-  <link rel="stylesheet" href="/collection-premium-watches/assets/index-1e879960.css">
+  <link rel="stylesheet" href="/collection-premium-watches/assets/index-41e9cf5c.css">
 </head>
 
 <body>
+  <!-- Loads the specified .html file -->
   <header class="header">
   <div class="header__container">
     <a href="" class="header__logo logo">Watchcharm</a>
@@ -68,7 +69,7 @@
 
          <div class="hero__scroll scroll">
             <img class="scroll__img" src="/collection-premium-watches/assets/avatars-2df403e1.png" alt="Avatarts" width="108" height="44">
-            <a href="#footer" class="scroll__link">Scroll down</a>
+            <a href="#page-footer" class="scroll__link">Scroll down</a>
          </div>
       </div>
 
@@ -81,7 +82,7 @@
 
    </div>
 </section>
-    <section class="about-us">
+    <section class="about-us" id="about-us">
    <div class="about-us__container">
       <div class="about-us__description description-about">
          <h2 class="description-about__title title-section">About us</h2>
@@ -99,7 +100,7 @@
       </div>
    </div>
 </section>
-    <section class="catalog">
+    <section class="catalog" id="catalog">
    <div class="catalog__container">
       <h2 class="catalog__title title-section title-section_margin">Catalog</h2>
       <ul class="catalog__cards">
@@ -164,7 +165,7 @@
       </div>
    </div>
 </section>
-    <section class="sale">
+    <section class="sale" id="sale">
    <div class="sale__container">
       <h2 class="sale__title title-section title-section_margin">Sale</h2>
       <div class="sale__content model-description">
@@ -226,7 +227,7 @@
       </div>
    </div>
 </section>
-    <section class="reviews">
+    <section class="reviews" id="reviews">
    <div class="reviews__container">
       <h2 class="reviews__title title-section title-section_margin">Reviews</h2>
       <ul class="reviews__list list-reviews">
@@ -254,7 +255,7 @@
       </ul>
    </div>
 </section>
-    <section class="contact-us">
+    <section class="contact-us" id="contact-us">
    <div class="contact-us__container">
       <h2 class="contact-us__title title-section title-section_margin">Contact us</h2>
 
@@ -284,8 +285,90 @@
    </div>
 </section>
   </main>
+  
+  <footer class="page-footer page-footer__container" id="page-footer">
+   <div class="page-footer__inner">
+      <div class="contacts-footer">
+         <div class="contacts-footer__logo-block">
 
-  <!-- Loads the specified .html file -->
+            <!-- LOGO -->
+            <a class="logo contacts-footer__logo" href="./index.html">watchcharm</a>
+            <!-- /LOGO -->
+
+            <!-- SOCIAL -->
+            <ul class="social contacts-footer__social">
+               <li class="social__item">
+                  <a href="https://www.facebook.com/goITclub/" class="social__link" target="blank">
+                     <svg class="social__icon" width="20" height="20">
+                        <use href="/collection-premium-watches/assets/icons-f2454097.svg#icon-facebook"></use>
+                     </svg>
+                  </a>
+               </li>
+               <li class="social__item">
+                  <a href="https://www.instagram.com/goitclub/" class="social__link" target="blank">
+                     <svg class="social__icon" width="20" height="20">
+                        <use href="/collection-premium-watches/assets/icons-f2454097.svg#icon-instagram"></use>
+                     </svg>
+                  </a>
+               </li>
+               <li class="social__item">
+                  <a href="https://www.youtube.com/c/GoIT" class="social__link" target="blank">
+                     <svg class="social__icon" width="20" height="20">
+                        <use href="/collection-premium-watches/assets/icons-f2454097.svg#icon-youtube"></use>
+                     </svg>
+                  </a>
+               </li>
+            </ul>
+            <!-- /SOCIAL -->
+         </div>
+
+         <address class="contacts-footer__phone">
+            <a class="contact-phone" href="tel:+380684439426">+380 (68) 443-94-26</a>
+         </address>
+
+         <p class="contacts-footer__slogan">Have the time of your life with our watches: where high-class
+            craftsmanship meets impeccable design</p>
+      </div>
+
+      <div class="page-footer__navigation">
+         <!-- MENU -->
+         <nav class="menu page-footer__menu">
+            <ul class="menu__list page-footer__menu-list">
+               <li class="menu__item page-footer__menu-item">
+                  <a href="./index.html" class="menu__link page-footer__menu-link">Home</a>
+               </li>
+               <li class="menu__item page-footer__menu-item">
+                  <a href="#about-us" class="menu__link page-footer__menu-link">About Us</a>
+               </li>
+               <li class="menu__item page-footer__menu-item">
+                  <a href="#catalog" class="menu__link page-footer__menu-link">Catalog</a>
+               </li>
+               <li class="menu__item page-footer__menu-item">
+                  <a href="#sale" class="menu__link page-footer__menu-link">Sale</a>
+               </li>
+               <li class="menu__item page-footer__menu-item">
+                  <a href="#reviews" class="menu__link page-footer__menu-link">Reviews</a>
+               </li>
+               <li class="menu__item page-footer__menu-item">
+                  <a href="#contact-us" class="menu__link page-footer__menu-link">Contact Us</a>
+               </li>
+            </ul>
+         </nav>
+         <!--/ MENU -->
+
+         <address class="contact-address">1678 S. Pioneer Road Salt Lake City UT 84104</address>
+      </div>
+
+      <div class="page-footer__extra">
+         <p class="page-footer__copyright">&copy;<time>2023</time>&nbsp;<span>The Watch Spot.</span> All rights
+            reserved.</p>
+         <div class="page-footer__user-policy">
+            <a href="#" class="page-footer__terms">Terms of Service</a>
+            <a href="#" class="page-footer__privacy-policy-link">Privacy Policy</a>
+         </div>
+      </div>
+   </div>
+</footer>
   <div class="mobile-menu"> <!--add class "is-open" for mobile-munu to appear -->
    <button class="mobile-menu__btn btn-close-menu">
       <svg class="btn-close-menu__icon" width="34" height="34">
